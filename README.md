@@ -8,9 +8,9 @@ The system is a simple javascript site, so to run you will only need to clone th
 
 ## Built With
 
-* [Visual Studio Code](http://www.dropwizard.io/1.0.2/docs/) - The editor software
-* [JQuery](http://www.dropwizard.io/1.0.2/docs/) - The javascript library
-* [Materialize](http://www.dropwizard.io/1.0.2/docs/) - The css framework
+* [Visual Studio Code](https://code.visualstudio.com/?wt.mc_id=DX_841432) - The editor software
+* [JQuery](https://jquery.com/) - The javascript library
+* [Materialize](http://archives.materializecss.com/0.100.2/) - The css framework
 
 ## Authors
 

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,28 +9,47 @@
     <link rel="shortcut icon" href="img/689904.svg" />
     <title>A site selling myself</title>
 </head>
-
 <body>
-    <nav class="blue darken-4">
-        <div class="container">
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo left">
-                    Gabriel<strong class="orange-text darken-4">D</strong>Sousa
-                </a>
-                <div class="container">
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="#about">About me</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#portifolio">Portfolio</a></li>
-                        <li><a href="#trainning">Certifications</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="index.html">Site em português</a></li>
+    <div class="hide-on-large-only">
+        <nav class="blue darken-4">
+            <a href="#" class="brand-logo center">
+                <span class="flow-text">Gabriel<strong class="orange-text darken-4">D</strong>Sousa</span>
+            </a>
+            <ul id="slide-out" class="side-nav">
+                <li><a href="#about">About me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portifolio">Portfolio</a></li>
+                <li><a href="#trainning">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Site em português</a></li>
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+        </nav>
+    </div>
+    <div class="navbar-fixed hide-on-med-and-down">
+        <nav class="blue darken-4">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo center">
+                        <span class="flow-text">Gabriel<strong class="orange-text darken-4">D</strong>Sousa</span>
+                    </a>
+                    <ul id="nav-mobile" class="center hide-on-med-and-down">
+                        <div class="left">
+                            <li><a href="#about">About me</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#portifolio">Portfolio</a></li>
+                        </div>
+                        <div class="right">
+                            <li><a href="#trainning">Certifications</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="index.html">Site em português</a></li>
+                        </div>
                     </ul>
                 </div>
             </div>
-        </div>
-    </nav>
-
+        </nav>
+    </div>
+    
     <main>
         <div class="container">
             <section class="about z-depth-2" id="about">
@@ -265,17 +283,17 @@
                     <p class="grey-text text-lighten-4">
                         A nerd who is reinserting himself in the market.</p>
                     <div class="row contact">
-                        <div class="col s6">
+                        <div class="col s5">
                             <p>
                                 Phone, click to send me a message on whatsapp.</p>
                             <a href="https://api.whatsapp.com/send?phone=5532991395235&text=%20Hi%20Gabriel%2C%20I%20came%20through%20here%20to%20contact%20you%20to"
                                 target="_blank">
-                                <i class="material-icons">contact_phone</i>
+                                <i class="material-icons">contact_phone</i><br />
                                 +55 32 991395135
                             </a>
                         </div>
 
-                        <div class="col s6">
+                        <div class="col s5">
                             <p>Email, click to send me a message to me.</p>
                             <a href="mailto:gabrielramos.email@gmail.com" target="_blank">
                                 <i class="material-icons">contact_mail</i>
@@ -307,6 +325,7 @@
     <script src="lib/jquery/jquery-3.4.1.min.js"></script>
     <script src="lib/materialize/js/materialize.min.js"></script>
     <script src="js/init.js"></script>
+    <script src="js/sidenav.js"></script>
 </body>
 
 </html>

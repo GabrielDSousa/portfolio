@@ -10,25 +10,45 @@
     <title>Um site vendendo meu peixe</title>
 </head>
 <body>
-    <nav class="blue darken-4">
-        <div class="container">
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo left">
-                    Gabriel<strong class="orange-text darken-4">D</strong>Sousa
-                </a>
-                <div class="container">
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="#about">Sobre mim</a></li>
-                        <li><a href="#skills">Habilidades</a></li>
-                        <li><a href="#portifolio">Portifólio</a></li>
-                        <li><a href="#trainning">Certificações</a></li>
-                        <li><a href="#contact">Contato</a></li>
-                        <li><a href="en.html">English Site</a></li>
+    <div class="hide-on-large-only">
+        <nav class="blue darken-4">
+            <a href="#" class="brand-logo center">
+                <span class="flow-text">Gabriel<strong class="orange-text darken-4">D</strong>Sousa</span>
+            </a>
+            <ul id="slide-out" class="side-nav">
+                <li><a href="#about">Sobre mim</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#portifolio">Portifólio</a></li>
+                <li><a href="#trainning">Certificações</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="en.html">English Site</a></li>
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+        </nav>
+    </div>
+    <div class="navbar-fixed hide-on-med-and-down">
+        <nav class="blue darken-4">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo center">
+                        <span class="flow-text">Gabriel<strong class="orange-text darken-4">D</strong>Sousa</span>
+                    </a>                    
+                    <ul id="nav-mobile" class="center hide-on-med-and-down">
+                        <div class="left">
+                            <li><a href="#about">Sobre mim</a></li>
+                            <li><a href="#skills">Habilidades</a></li>
+                            <li><a href="#portifolio">Portifólio</a></li>
+                        </div>
+                        <div class="right">
+                            <li><a href="#trainning">Certificações</a></li>
+                            <li><a href="#contact">Contato</a></li>
+                            <li><a href="en.html">English Site</a></li>
+                        </div>
                     </ul>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
 
     <main>
         <div class="container">
@@ -173,28 +193,29 @@
                         <legend>Blog voitto feito em colaboração com a equipe</legend>
                     </div>
                     <div class="col s12 m6 l4">
-                        <a href="https://gabrieldsousa.github.io/Alura-HTML5-CSS3/" target="_blank"><img src="img/htmlcss.png"></a>
+                        <a href="https://gabrieldsousa.github.io/Alura_HTML5_CSS3/" target="_blank"><img
+                                src="img/htmlcss.png"></a>
                         <legend>Site feito com HTML e CSS puro para treinamento</legend>
                     </div>
                     <div class="col s12 m6 l4">
-                        <a href="https://gabrieldsousa.github.io/Alura-JavaScript/" target="_blank"><img
+                        <a href="https://gabrieldsousa.github.io/Alura_JavaScript/" target="_blank"><img
                                 src="img/javascript.png"></a>
                         <legend>Site feito com HTML, CSS e JavaScript puro para treinamento</legend>
                     </div>
                     <div class="col s12 m6 l4">
-                        <a href="https://gabrieldsousa.github.io/Estudo-Alura-Curso-Flexbox/" target="_blank"><img
+                        <a href="https://gabrieldsousa.github.io/Alura_Flexbox/" target="_blank"><img
                                 src="img/flexbox.png"></a>
                         <legend>Site feito em treinamento flexbox</legend>
                     </div>
                     <div class="col s12 m6 l4">
-                        <a href="https://gabrieldsousa.github.io/Estudo-Alura-Web-Design-Responsivo/"
+                        <a href="https://gabrieldsousa.github.io/Alura_Web_Design_Responsivo/"
                             target="_blank"><img src="img/responsividade.png"></a>
                         <legend>Site que simula site de notícias em treinamento de responsividade</legend>
                     </div>
                     <div class="col s12 m6 l4">
-                        <a href="https://gabrieldsousa.github.io/Estudo-Alura-Sass--Compass/" target="_blank"><img
+                        <a href="https://gabrieldsousa.github.io/Alura_Sass_Compass/" target="_blank"><img
                                 src="img/Sass.png"></a>
-                        <legend>Site feito em treinamento de Sass e Less</legend>
+                        <legend>Site feito em treinamento de Sass e Compass</legend>
                     </div>
                 </div>
             </section>
@@ -258,16 +279,16 @@
                     <h5 class="white-text">Gabriel Ramos de Sousa</h5>
                     <p class="grey-text text-lighten-4">Um nerd que está se reinserindo no mercado.</p>
                     <div class="row contact">
-                        <div class="col s6">
+                        <div class="col s5">
                             <p>Telefone, clique para me mandar uma mensagem no whatsapp.</p>
                             <a href="https://api.whatsapp.com/send?phone=5532991395135&text=Ol%C3%A1%20Gabriel%2C%20vim%20atrav%C3%A9s%20daqui%20lhe%20contactar%20para"
                                 target="_blank">
-                                <i class="material-icons">contact_phone</i>
+                                <i class="material-icons">contact_phone</i><br />
                                 +55 32 991395135
                             </a>
                         </div>
 
-                        <div class="col s6">
+                        <div class="col s5">
                             <p>Email, clique para enviar uma mensagem para mim.</p>
                             <a href="mailto:gabrielramos.email@gmail.com" target="_blank">
                                 <i class="material-icons">contact_mail</i>
@@ -299,5 +320,6 @@
     <script src="lib/jquery/jquery-3.4.1.min.js"></script>
     <script src="lib/materialize/js/materialize.min.js"></script>
     <script src="js/init.js"></script>
+    <script src="js/sidenav.js"></script>
 </body>
 </html>
